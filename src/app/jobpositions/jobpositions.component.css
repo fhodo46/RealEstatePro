@@ -1,0 +1,2 @@
+body::-webkit-scrollbar{ display:none;} 
+body{ overflow-x: hidden;      background-image: url("/jobbackgroundimage.jpg");}

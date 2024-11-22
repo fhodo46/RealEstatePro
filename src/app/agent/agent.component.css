@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+*{
+  padding: 0; margin:0;   
+}
+
+
+
+
+
+body{ background-color: #12172b; font-family: "Poppins", sans-serif;}
+
+.agentcontainer { margin: 20px 40px; color: white;}
+
+.h1agentclass { font-size: 60px; color:white; margin-left:510px; font-family: verdana;}
+
+.heading span{ font-style: italic;  font-size: 30px;}
+
+
+.profiles{ display:flex; justify-content: space-around; margin: 20px 80px;} .profile{ flex-basis: 260px;}
+
+.profile .profile-img{ height: 260px; width: 260px; border-radius:50%;  transition: 400ms; }
+
+.agentdescriptionclass{font-family: verdana;   text-align: center;}
+.user-name{margin-left: 82px; margin-top:10px; font-family: verdana;}
+
+
+
+
+
+.theagentrole{margin-left: 31px; margin-top:10px; font-family: verdana;}
+.thiswebpagefont{font-family: verdana; margin-top:10px; margin-left: 68.5px; }
+
+
+
+.thiswebpageanother{font-family: verdana; margin-top:10px; margin-left: 93px; }
+.thisagentpararaph{text-align: center; font-family: verdana;}
+
+.thirdagentclass{margin-left: 87.5px; margin-top:10px; font-family: verdana;} .directoragentclass{margin-left: 60px; margin-top:10px; font-family: verdana;}
+
+
+
+
+
+
+
+body::-webkit-scrollbar{ display:none;}               body{ overflow-x: hidden;}  

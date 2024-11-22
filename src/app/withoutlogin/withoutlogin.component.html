@@ -1,0 +1,32 @@
+<!DOCTYPE html><app-header> </app-header> <body>
+    <section id="home" class="hero">
+      <div class="intro"> 
+          <div class="headings"> 
+              <h3 class="greet-heading">Buy and sell your properties with the</h3>  <h1 class="my-heading"> <i>Real Estate Pro</i></h1>
+              <h4 class="sub-heading">
+                  
+    Take a look at some of our properties that have been bought</h4> </div>  
+    
+    
+    
+    
+    
+    
+      </div> </section>
+      <div id="container"> <br> <marquee>
+        
+     <img src="thefirstphoto.jpeg"> <img src="thesecondphoto.png">  <img src="thethirdphoto.jpg"> <img src="thefourthphoto.jpeg"> <img src="thefifthphoto.jpg"> <img src="thesixthphoto.jpg"> </marquee>
+        
+      
+    </div> <br> <p class="promotedpropertiestext"> Promoted Properties </p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <p class="otherpropertiestext"> Other Properties' Notifications </p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  
+     <p class="companyservicestext"> Our company services </p>
+    <div class="row" style="margin-left:259px;">
+      <div *ngFor="let presentation of presentations" class="col-3 card" style="margin-right:10px;">
+          <p [style]="presentation.style"> {{presentation.title}}</p>
+          <img class="card-img-top" [src]="presentation.link"  alt="Card image cap">
+          <div class="card-block"> <br>
+          <p [style]="presentation.descriptionstyle"> {{presentation.description}}</p>
+          </div>  
+      </div>
+    </div></body>   <app-footer> </app-footer>

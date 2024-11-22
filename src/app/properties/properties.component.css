@@ -1,0 +1,10 @@
+.homeanchorelement{
+    text-decoration: none; color: white; margin-left: 1159px;}  
+mat-sidenav-content{
+        background-image: url("/homebackgroundimage2.jpeg");  background-size: cover;
+    
+    }
+mat-sidenav-container{
+    width: 2110px;  
+    
+}   mat-toolbar { width: 2110px; overflow-x: hidden;}

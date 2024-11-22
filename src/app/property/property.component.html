@@ -1,0 +1,96 @@
+<br>
+<div class="row" style="margin-left:32px;">
+<div class="col-3" style="width: 382px;">
+        <div class="card">
+            <div class="card-header bg-success">  
+                New Property
+            </div>
+            <div class="card-body">
+                <form  [formGroup]="propertyform">
+                <div class="row">
+                    <div class="col-5.5">
+                        <label for=""> Category </label>
+                        <input type="text" formControlName="category" class="form-control">
+                    </div>
+                    <div class="col-5.5">
+                        <label for=""> Location </label>
+                        <input type="text" formControlName="location" class="form-control">  </div>
+                    <div class="col-5.5">
+                        <label for=""> Price </label>
+                            <input type="text" formControlName="price" class="form-control">
+                    </div>
+
+                    <div class="col-5.5">
+                        <label for=""> Surface </label>
+                        <input type="text" formControlName="surface" class="form-control">
+                    </div>
+                    <div class="col-5.5">
+                        <label for=""> Number of floors </label>
+                        <input type="text" formControlName="nroffloors" class="form-control">
+                    </div>
+                    <div class="col-10.5">
+                        <label for=""> Description </label>
+                        <input type="text" formControlName="description" class="form-control">
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-4 text-center">
+                        <button class="btn btn-secondary" (click)="resetdetails()"> Reset </button>
+                    </div>
+                    <div class="col-4 text-center">
+                        <button class="btn btn-success" (click)="onSave()"> Add Property </button>
+                       </div>
+                   <div class="col-4 text-center">
+                    <button class="btn btn-warning" (click)="onUpdate()"> Update Property </button>
+                   </div>
+                </div>   </form>  </div> </div>  </div>
+    
+    
+    
+    
+    
+    
+    <div class="col-10"    style="width: 1501px;">
+        <div class="card">
+            <div class="card-header bg-success">
+                <h6> Property List</h6>
+            </div>
+            <div class="card-body">
+             <div class="row">
+
+                <div class="col-12">
+
+                    <table class="table table-bordered"> 
+                        <thead>
+                            <tr>
+                                <th> ID </th>
+                                <th> Category </th>
+                                <th> Location </th>
+                                <th> Price </th>
+                                <th> Surface </th>
+                                <th> Nr of floors</th>
+                                <th> Descn. </th>
+                                <th> Action </th>  <th> Photos </th> <th> Date of Submission</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for(item of propertylist; track $index){
+
+                                <tr> 
+                                    <td> {{$index + 1}}</td>
+                                    <td> {{item.category}}</td>
+                                    <td> {{item.location}}</td>
+                                    <td> {{item.price}}</td>
+                                    <td> {{item.surface}}</td>
+                                    <td> {{item.nroffloors}}</td>
+                                    <td> {{item.description}}</td>
+                                    <td>
+                                        <button class="btn btn-primary" (click)="onEdit(item)"> Edit </button>
+                                        <button class="btn btn-danger mx-2" (click)="onDelete(item.id)"> Delete </button>
+                                    </td>
+                                    <td> </td>          <td> {{newdate | date: 'HH:mm:ss'}}</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div> </div> </div> </div>  </div> </div>

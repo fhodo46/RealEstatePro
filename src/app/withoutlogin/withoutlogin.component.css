@@ -1,0 +1,46 @@
+.hero 
+{
+    background-image:     url("/theprojectpfp.jpeg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; font-family:Trebuchet MS, sans-serif;
+    
+    margin: 0 0;}
+
+.hero .intro {
+    text-align: center;
+    margin-bottom: 460px;  margin-left: 82px;
+}
+
+
+
+.hero .intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+#container{
+width: 100%; background-color: lightsalmon;
+  height: 230px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: row;
+}
+
+#container img{
+    width: 230px;
+  height: 210px; margin-left: 20px; margin-top: 10px;}
+.amstelvalalpha{ font: 2rem 'AmstelvarAlpha', sans-serif;} body::-webkit-scrollbar{ display:none;} body{ overflow-x: hidden;}    
+.companyservicestext{font-family: candara;        margin-left:590px; font-size: 35px; font-weight: bold;}  
+.promotedpropertiestext{font-family: candara;        margin-left:593px; font-size: 35px; font-weight: bold;}
+
+
+.otherpropertiestext {font-family: candara;       margin-left:538px; font-size: 35px; font-weight: bold;}

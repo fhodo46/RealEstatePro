@@ -1,0 +1,10 @@
+.homeanchorelement{
+    text-decoration: none; color: white; margin-left: 1159px;}  
+.h1logintext{
+    margin-left: 453px;}
+    
+mat-sidenav-content{
+    background-image: url("/homebackgroundimage.jpeg");  background-size: cover;
+}
+
+body{overflow-y: hidden;} 
